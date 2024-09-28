@@ -1,0 +1,53 @@
+.weather-box-list {
+  width: 850px;
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px; /* Adds spacing between the boxes */
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+}
+
+.weather-box-list > li {
+  list-style-type: none;
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 20%; /* Changed to a smoother shape */
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly more opaque for better contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+}
+
+.weather-box:hover {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.weather-box > img {
+  width: 80px; /* Adjusted size for better spacing */
+  height: 80px;
+  margin-bottom: 10px; /* Added spacing between image and title */
+}
+
+.weather-box > h1 {
+  font-size: 1.2rem;
+  color: #365a7a;
+  text-align: center; /* Centers text inside the box */
+  margin-top: 10px;
+}
+
+.temp {
+  padding-bottom: 10px;
+  font-size: 1em; /* Slightly increased for readability */
+  color: #113555; /* Matching color scheme */
+  font-weight: bold; /* Make temperature more prominent */
+}

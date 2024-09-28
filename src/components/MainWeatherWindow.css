@@ -1,0 +1,85 @@
+.main {
+  position: relative;
+  top: -25px;
+  height: 480px;
+  width: 980px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly increased opacity for better readability */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+}
+
+.inner-main {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inner-main p {
+  padding: 0px 0px 5px 0px;
+  position: relative;
+  transition: all 0.5s ease-out;
+  color: #113555;
+  font-size: 1.2rem; /* Slightly larger text */
+}
+
+.inner-main > img {
+  position: relative;
+  left: -80px;
+  top: 90px;
+  width: 300px;
+  transition: transform 0.5s ease-out; /* Add smooth scaling animation */
+}
+
+.inner-main > img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.today {
+  position: relative;
+  width: 350px;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.today > h1 {
+  margin-bottom: 15px;
+  color: #365a7a;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title {
+  position: absolute;
+  top: -10px;
+  color: #365a7a;
+  font-size: 4rem;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.title:before {
+  content: '';
+  background: url('../images/02d.svg') no-repeat center;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.title:before:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+}
